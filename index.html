@@ -22,9 +22,50 @@
         user-select: none;
       }
       body {
-        background-color: white;
-        color: #111;
+        background: #38383a;
+      }
+      .HomePage {
+        display: none;
+      }
+      .loading:after {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        animation: load infinite 0.8s;
+        font-size: 30px;
+        content: "•●•";
+        color: #fff;
+        text-align: center;
+        font-family: monospace;
+      }
+      @keyframes load {
+        25% {
+          content: "••●";
+        }
+        45% {
+          content: "•●•";
+        }
+        75% {
+          content: "●••";
+        }
+        90% {
+          content: "•●•";
+        }
       }
     </style>
+    <div class="loading"></div>
+    <div class="HomePage"></div>
+    <script>
+      const loading = document.querySelector(".loading");
+      const homePage = document.querySelector(".HomePage");
+      const body = document.querySelector("body");
+      setInterval(() => {
+        loading.style.display = "none";
+        homePage.style.display = "block";
+        body.style.background = "white";
+      }, 800);
+    </script>
   </body>
 </html>
