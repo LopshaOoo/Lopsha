@@ -50,7 +50,7 @@ header {
   color: var(--accent);
 }
 .nav-links {
-  line-height: 45px;
+  transform: translateY(9px);
 }
 
 .brend-name span {
@@ -62,7 +62,10 @@ header {
   letter-spacing: 1px;
 }
 
-@media (max-width: 775px) {
+@media (max-width: 785px) {
+  .nav-links {
+    transform: translateY(0px);
+  }
   .header-container {
     flex-direction: column;
   }
@@ -198,3 +201,4 @@ header {
   color: #a0a0a0;
   font-size: 14px;
 }
+
