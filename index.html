@@ -1,71 +1,330 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lopsha Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nocturne Coffee</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js"></script>
   </head>
+  <style>
+    :root {
+  --bg: #121212;
+  --accent: #8b5a2b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  color: #e0e0e0;
+  line-height: 1.6;
+  text-align: center;
+}
+
+header {
+  padding: 24px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  text-align: center;
+  background-color: var(--bg);
+  border-bottom: solid 1px #333;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  max-width: 1200px;
+  box-sizing: border-box;
+  gap: 15px;
+  margin: 0 auto;
+}
+
+.nav-links a {
+  font-size: 13.6px;
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 500;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  margin: 0 7px;
+}
+.nav-links a:hover {
+  color: var(--accent);
+}
+.nav-links {
+  line-height: 45px;
+}
+
+.brend-name span {
+  color: var(--accent);
+}
+.brend-name {
+  font-size: 28.8px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 775px) {
+  .header-container {
+    flex-direction: column;
+  }
+  .nav-links a {
+    margin: 1px;
+  }
+}
+
+.dropdown-filters {
+  width: 100%;
+  margin: 30px 0;
+}
+.dropdown-containers {
+  max-width: 1200px;
+  margin: auto;
+}
+.dropdown-filters button {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  padding: 10px;
+  color: #e0e0e0;
+  transition: 0.3s;
+  border-radius: 4px;
+  width: 90px;
+  margin: 5px 5px;
+}
+.dropdown-filters button:hover {
+  border: 1px #8b5a2b solid;
+}
+.sort-right-container {
+  float: right;
+}
+.sort-right-container span {
+  color: #a0a0a0;
+}
+.sort-left-container {
+  float: left;
+}
+@media (max-width: 445px) {
+  .sort-right-container {
+    float: none;
+    display: inline-block;
+    margin: auto;
+  }
+  .sort-left-container {
+    float: none;
+    display: inline-block;
+    margin: auto;
+  }
+  .sort-right-container span {
+    display: none;
+  }
+}
+
+@media (max-width: 1247px) {
+  .sort-right-container {
+    margin: 0 12px 0 0;
+  }
+  .sort-left-container {
+    margin: 0 0 0 12px;
+  }
+}
+@media (max-width: 1230px) {
+  .sort-right-container {
+    margin: 0 17px 0 0;
+  }
+  .sort-left-container {
+    margin: 0 0 0 17px;
+  }
+}
+@media (max-width: 1220px) {
+  .sort-right-container {
+    margin: 0 26px 0 0;
+  }
+  .sort-left-container {
+    margin: 0 0 0 26px;
+  }
+}
+@media (max-width: 370px) {
+  .sort-right-container {
+    margin: 0;
+  }
+  .sort-left-container {
+    margin: 0;
+  }
+}
+
+.page-title p {
+  font-weight: 300;
+  color: #a0a0a0;
+}
+.page-title h2 {
+  font-weight: 300;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+.page-title {
+  border-bottom: 1px solid #333;
+  padding: 96px 20px 48px 20px;
+}
+
+@media (max-width: 650px) {
+  .page-title h2 {
+    font-size: 37px;
+  }
+  .page-title p {
+    font-size: 20;
+  }
+}
+@media (max-width: 610px) {
+  .page-title h2 {
+    font-size: 33px;
+  }
+  .page-title p {
+    font-size: 20;
+  }
+}
+
+@media (max-width: 445px) {
+  .page-title h2 {
+    font-size: 31px;
+  }
+  .page-title {
+    padding: 0 20px 48px 20px;
+  }
+}
+
+.copyright {
+  border-top: 1px #333 solid;
+  margin: 0 30px 0 30px;
+  padding: 20px;
+  color: #a0a0a0;
+  font-size: 14px;
+}
+
+  </style>
   <body>
-    <style>
-      html {
-        user-select: none;
-      }
-      body {
-        background: #38383a;
-      }
-      .HomePage {
-        display: none;
-      }
-      .loading:after {
-        display: block;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        animation: load infinite 0.8s;
-        font-size: 30px;
-        content: "•●•";
-        color: #fff;
-        text-align: center;
-        font-family: monospace;
-      }
-      @keyframes load {
-        25% {
-          content: "••●";
-        }
-        45% {
-          content: "•●•";
-        }
-        75% {
-          content: "●••";
-        }
-        90% {
-          content: "•●•";
-        }
-      }
-    </style>
-    <div class="loading"></div>
-    <div class="HomePage">
-          <h3 style="font-family: sans-serif"> Notebook!
-    </h3>
-    <h3 style="font-family: sans-serif">Beautiful colors for your sites:</h3>
-    <p style="width: 170px">
-      Красивые Цвета: #ff5350 красный #131230 черный #1B1C1E серый #232931 серый
-      (1) #F5B557 оранжевый
-    </p>
-    <p style="width: 200px">
-      Тема для приложения: Темная тема - #D1BCFF Светлая тема - #674FA3
-    </p>
+    <header>
+      <div class="header-container">
+        <div class="brend-name">NOCTURNE<span>COFFEE</span></div>
+        <div class="nav-links">
+          <a href="">COFFEE</a>
+          <a href="">TEA</a>
+          <a href="">CONTACTS</a>
+          <a href="">SUBSCRIPTION</a>
+          <a href="">ABOUT</a>
+        </div>
+    </header>
+    <div class="dropdown-filters">
+      <div class="dropdown-containers">
+      <div class="sort-left-container">
+        <button class="origin">Origin <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"></path></svg></button>
+        <button class="type">Type <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"></path></svg></button>
+      </div>
+      <div class="sort-right-container">
+        <span>Sort by:</span>
+        <button class="sort-by">Default <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"></path></svg></button>
+      </div>
+      </div>
     </div>
-    <script>
-      const loading = document.querySelector(".loading");
-      const homePage = document.querySelector(".HomePage");
-      const body = document.querySelector("body");
-      setInterval(() => {
-        loading.style.display = "none";
-        homePage.style.display = "block";
-        body.style.background = "white";
-      }, 800);
-    </script>
+    <div class="page-title">
+      <h2>Specialty Coffee & Artisan Tea</h2>
+      <p>
+        Curated selection of the world's finest single-origin coffees and rare
+        teas
+      </p>
+    </div>
+    <div class="products">
+      <div class="product-card">
+        <img src="" alt="">
+        <div class="product-info">
+          <h2>Ethiopia Yirgacheffe</h2>
+          <p>Floral and tea-like with notes of bergamot and lemon</p>
+        </div>
+        <div class="product-footer">
+          <span class="product-price">1890₽</span>
+          <button class="add-to-cart">Add to card</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="" alt="">
+        <div class="product-info">
+          <h2>Guatemala Antigua</h2>
+          <p>Chocolate and spice with smoky finish</p>
+        </div>
+        <div class="product-footer">
+          <span class="product-price">970₽</span>
+          <button class="add-to-cart">Add to card</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="" alt="">
+        <div class="product-info">
+          <h2>Earl Grey Supreme</h2>
+          <p>Black tea with bergamot oil and cornflower petals</p>
+        </div>
+        <div class="product-footer">
+          <span class="product-price">2900₽</span>
+          <button class="add-to-cart">Add to card</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="" alt="">
+        <div class="product-info">
+          <h2>Assam Black Tea</h2>
+          <p>Malty and robust with honey notes</p>
+        </div>
+        <div class="product-footer">
+          <span class="product-price">1320₽</span>
+          <button class="add-to-cart">Add to card</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-about">
+        <h2 class="footer-brend">NOCTURNE</h2>
+        <p class="footer-info">Specialty coffee and tea retailer since 2018. We source directly from sustainable farms worldwide.</p>
+      </div>
+      <div class="footer-social-links">
+        <a href="">Telegram</a>
+        <a href="">Twitter</a>
+        <a href="">Facebook</a>
+      </div>
+      <div class="footer-column">
+        <ul class="shop">
+          <li><a href="">Coffee</a></li>
+          <li><a href="">Tea</a></li>
+          <li><a href="">Gift Cards</a></li>
+          <li><a href="">Subscriptions</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <ul class="information">
+          <li><a href="">About Us</a></li>
+          <li><a href="">Sustainability</a></li>
+          <li><a href="">Wholesale</a></li>
+          <li><a href="">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <ul class="contact">
+          <li><a href="">87 Coffee Street Portland, OR 97204</a></li>
+          <li><a href="">Email: info@nocturne.coffee <br> Phone: (503) 555-0199</a></li>
+          <li><a href="">Mon-Fri: 8am - 5pm PST</a></li>
+        </ul>
+      </div>
+      <div class="copyright">© 2025 NOCTURNE COFFEE. All rights reserved.</div>
+    </footer>
   </body>
 </html>
+
