@@ -78,21 +78,53 @@ header {
   position: absolute;
   top: 44px;
   left: 5px;
-  border: #a0a0a0 solid 1px;
+  border: #333 solid 1px;
   text-align: left;
   width: 150px;
-  background: #fff;
+  background: #1e1e1e;
   display: none;
 }
 .type-list {
   position: absolute;
   top: 44px;
   left: 120px;
-  border: #a0a0a0 solid 1px;
+  border: #333 solid 1px;
   text-align: left;
   width: 150px;
-  background: #fff;
+  background: #1e1e1e;
   display: none;
+}
+
+.type-list button {
+  border: none;
+  background: #1e1e1e;
+  color: var(--light);
+  transition: 0.3s;
+  width: 100%;
+  text-align: left;
+  padding: 12.8px 16px;
+  font-size: 15px;
+}
+.origin-list button {
+  border: none;
+  background: #1e1e1e;
+  color: var(--light);
+  transition: 0.3s;
+  width: 100%;
+  text-align: left;
+  padding: 12.8px 16px;
+  font-size: 15px;
+}
+
+.origin-list button:hover {
+  border: none;
+  background: #121212;
+  color: #8b5a2b;
+}
+.type-list button:hover {
+  border: none;
+  background: #121212;
+  color: #8b5a2b;
 }
 
 .origin:hover + .origin-list {
