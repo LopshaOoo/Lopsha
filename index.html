@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nocturne Coffee</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js"></script>
   </head>
   <body>
     <header>
@@ -20,17 +21,33 @@
     </header>
     <div class="dropdown-filters">
       <div class="dropdown-containers">
-      <div class="sort-left-container">
-        <button class="origin">Origin <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 9l6 6 6-6"></path></svg></button>
-        <button class="type">Type <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 9l6 6 6-6"></path></svg></button>
-      </div>
-      <div class="sort-right-container">
-        <span>Sort by:</span>
-        <button class="sort-by">Default <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 9l6 6 6-6"></path></svg></button>
-      </div>
+        <div class="sort-left-container">
+        <button class="origin">🌍 Origin <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg></button>
+        <div class="origin-list">
+          <button class="all-origins">All Origins</button>
+          <button class="ethiopia">Ethiopia</button>
+          <button class="colombia">Colombia</button>
+          <button class="japan">Japan</button>
+          <button class="india">India</button>
+        </div>
+        <button class="type">☕ Type <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg></button>
+        <div class="type-list">
+          <button class="all-origins">All Origins</button>
+          <button class="ethiopia">Ethiopia</button>
+          <button class="colombia">Colombia</button>
+          <button class="japan">Japan</button>
+          <button class="india">India</button>
+        </div>
+        </div>
+        <div class="sort-right-container">
+          <span>Sort by:</span>
+          <select class="sort-by" onchange="sortProducts(this.value)">
+                <option value="default">Default</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="name-asc">Name: A-Z</option>
+            </select>
+        </div>
       </div>
     </div>
     <div class="page-title">
@@ -40,7 +57,7 @@
         teas
       </p>
     </div>
-    <div class="products">
+    <!-- <div class="products">
       <div class="product-card">
         <img src="" alt="">
         <div class="product-info">
@@ -85,45 +102,46 @@
           <button class="add-to-cart">Add to card</button>
         </div>
       </div>
-    </div>
+    </div> -->
     <footer>
-      <div class="footer-about">
-        <h2 class="footer-brend">NOCTURNE</h2>
-        <p class="footer-info">Specialty coffee and tea retailer since 2018. We source directly from sustainable farms worldwide.</p>
+      <div class="footer-container">
+        <div class="footer-about">
+          <h2 class="footer-brend">NOCTURNE</h2>
+          <p class="footer-info">Specialty coffee and tea retailer since 2018. We source directly from sustainable farms worldwide.</p>
+          <div class="footer-social-links">
+            <a href="">Telegram</a>
+            <a href="">Twitter</a>
+            <a href="">Facebook</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <ul class="shop">
+            <h2>Shop</h2>
+            <li><a href="">Coffee</a></li>
+            <li><a href="">Tea</a></li>
+            <li><a href="">Gift Cards</a></li>
+            <li><a href="">Subscriptions</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul class="information">
+            <h2>Information</h2>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Sustainability</a></li>
+            <li><a href="">Wholesale</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul class="contact">
+            <h2>Contact</h2>
+            <li>New York, 14 Wall Street, OR 10001</li>
+            <li>Email: nocturne-coffee@mail.info <br> Phone: +7 921 129 02 34</li>
+            <li>Mon-Fri: 8am - 5pm PST</li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-social-links">
-        <a href="">Telegram</a>
-        <a href="">Twitter</a>
-        <a href="">Facebook</a>
-      </div>
-      <div class="footer-column">
-        <ul class="shop">
-          <li><a href="">Coffee</a></li>
-          <li><a href="">Tea</a></li>
-          <li><a href="">Gift Cards</a></li>
-          <li><a href="">Subscriptions</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <ul class="information">
-          <li><a href="">About Us</a></li>
-          <li><a href="">Sustainability</a></li>
-          <li><a href="">Wholesale</a></li>
-          <li><a href="">Blog</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <ul class="contact">
-          <li><a href="">87 Coffee Street Portland, OR 97204</a></li>
-          <li><a href="">Email: info@nocturne.coffee <br> Phone: (503) 555-0199</a></li>
-          <li><a href="">Mon-Fri: 8am - 5pm PST</a></li>
-        </ul>
-      </div>
-      <div class="copyright">© 2025 NOCTURNE COFFEE. All rights reserved.</div>
     </footer>
+    <div class="copyright">© 2025 NOCTURNE COFFEE. All rights reserved.</div>
   </body>
 </html>
-
-
-
-
