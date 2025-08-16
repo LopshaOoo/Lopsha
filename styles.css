@@ -82,6 +82,7 @@ header {
   text-align: left;
   width: 150px;
   background: #1e1e1e;
+  border-radius: 4px;
   display: none;
 }
 .type-list {
@@ -92,6 +93,7 @@ header {
   text-align: left;
   width: 150px;
   background: #1e1e1e;
+  border-radius: 4px;
   display: none;
 }
 
