@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nocturne Coffee</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sstyles.css">
     <script src="scripts/script.js"></script>
   </head>
   <body>
@@ -56,52 +56,142 @@
         teas
       </p>
     </div>
-    <!-- <div class="products">
-      <div class="product-card">
-        <img src="" alt="">
-        <div class="product-info">
-          <h2>Ethiopia Yirgacheffe</h2>
-          <p>Floral and tea-like with notes of bergamot and lemon</p>
+    <div class="products">
+      <div class="products-container">
+        <div class="product-cart">
+          <img src="" alt="">
+          <div class="product-info">
+            <h2>Ethiopia Yirgacheffe</h2>
+            <p>Floral and tea-like with notes of bergamot and lemon</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price" onclick="alert('Lopsha')">1890₽</span>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
         </div>
-        <div class="product-footer">
-          <span class="product-price">1890₽</span>
-          <button class="add-to-cart">Add to card</button>
+        <div class="product-cart">
+          <img src="" alt="">
+          <div class="product-info">
+            <h2>Ethiopia Yirgacheffe</h2>
+            <p>Floral and tea-like with notes of bergamot and lemon</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">1890₽</span>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-cart">
+          <img src="" alt="">
+          <div class="product-info">
+            <h2>Ethiopia Yirgacheffe</h2>
+            <p>Floral and tea-like with notes of bergamot and lemon</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">1890₽</span>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-cart">
+          <img src="" alt="">
+          <div class="product-info">
+            <h2>Ethiopia Yirgacheffe</h2>
+            <p>Floral and tea-like with notes of bergamot and lemon</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">1890₽</span>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-cart">
+          <img src="" alt="">
+          <div class="product-info">
+            <h2>Ethiopia Yirgacheffe</h2>
+            <p>Floral and tea-like with notes of bergamot and lemon</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">1890₽</span>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-cart">
+          <img src="" alt="">
+          <div class="product-info">
+            <h2>Ethiopia Yirgacheffe</h2>
+            <p>Floral and tea-like with notes of bergamot and lemon</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">1890₽</span>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-cart">
+          <img src="" alt="">
+          <div class="product-info">
+            <h2>Ethiopia Yirgacheffe</h2>
+            <p>Floral and tea-like with notes of bergamot and lemon</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">1890₽</span>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-cart">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZkY_fkjwGJKwT4OfjrHneUPcdwX5SPuC3Zg&s" alt="">
+          <div class="product-info">
+            <h2>Ethiopia Yirgacheffe</h2>
+            <p>Floral and tea-like with notes of bergamot and lemon</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">1890₽</span>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-cart">
+          <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMVFRUXFRUXFxgVFxcVFxcXFRgWFhcWFxYYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy0mICUtLS0tLSstLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAK8BHwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAQIDBQYHAAj/xABDEAABAwICBwQHBgUDAwUAAAABAAIDBBEhMQUGEkFRYXEigZGhBxMyscHR8BRCUmJy4SNDgpLxM7LSFRaDF0RTVML/xAAZAQADAQEBAAAAAAAAAAAAAAABAgMEAAX/xAAtEQACAgEDAwIFBAMBAAAAAAAAAQIRAxIhMQRBURMiFGGx4fBxkaHxYoHRI//aAAwDAQACEQMRAD8A6wQkKQlISmFoVIbJpKaSuCONkwlNJTSUoRSU0uXim2KAT10i8QV7YKATyQr3qyvGJAJ4JLrwiSOYN5QboKPbSQlRSSgYC5UMrJD+Uc1J5oLuOsbYS5w4oWp0lGzNwQc+invzmcOn+FWVGpkb/alkP9R+Sm+oXYosXkdpDXKFmRuszX68PdgwK9Ho+p9znf3H4hNPo9Z91z+4tPwUnlbKqMUYeo0nPJm4hCtpycSSeq29RqO5uTyP1M+IKr59Vp25bLuhsfAqbmOkZ1kAUwjRkujpGe2xzeow8VLFSE7kGxkgNkakbEVawaOKPh0cBml1DUUcVISjYtHkq7ip2jKyJjhQ3DsU8ejgiY6ADcrZtOp20qKjYHKiobRjgpPsAO5XDaYJ4iTqAmsp49H2RTaUbwj/AFa9sKkbQjdlZLothyVVW6NLdy05amPAOatHITcDUmyTBNLV7ZW4wCkhNJCQtSFqARNoJC5e2F4tQCNc9ML08tUcjmjMgIDIQyJPWFVldp6CMe1c8kLo6ulqbOaCyImwP3nkZhg4De44BI5UMo2XRmSF5/ypDG2MWwJ93MXzPMpaSAyOucsSVCeR3SKxiqtkbIS7fhxOAU8dLGQbuJtnbAL1bJjsAdyijOzfawtmFByV77j02tthrqQ/dDiM+Y8FNA1z3BruzhwsTZEQuc2xaDa2Adgbcj81P9vb99pHO1/MKkccOW6+gkpy7KwWeh2TYHE5cDbdyKCe7sk2yzB3K99cx9rOBINxxVVPTH1pAwDvcc12bGlvA7HNvaQOGWsSMDzw8URT0+1fZJBHHEK0mpW+rLbYbPuVdoh52urfjgleHRNRl3D6mqLa7D7ub7TbjiPklNFHILgDuwPeFZvbfeLqsqotjtswse0N3VVnj0rfdCRnqe2zKqu0O5oNu036zCo5tHN3ANPLLvC39LJttvvVTprR4H8Ro6hZ83T1HXDgvizty0z5McYNk2PcdxU7aUnNFzMHDBDfaDGQHXLDgDvaeHMLPjnFumaZJ9h0Wj7IlkACzx1vaZPVxRSPfcixs03GYscst6jg14i2tmRjmY2OIdZaKRP3GsaxPQ9HWslaHxuDm8R8eCnsiILdeLl7ZSm29dZwxe2Ux84GShfMUrkFJkz3AId83BRuTbpbHSNmXhN2wkLU0tXsHkil6aXoWq0hEz2nBZ/SOt8bL7NhzKRySHjFvg1DpLZoCs0zHHm4LnWktb3v9kk+QVDPWSSZu8FCXUJcF49O3ybzSuu4FwyyyOkNZJpDmfcFWbA3pw5BZ5dRJ8F44Yot9VtFOrJ7SOIijG3LbDsjJoPFxw6XO5dcgjEbAbBpIAAAsGMA7LAN31wWV1Cpg2hlfvfLZxH4WgADx2j3rW6UOPIhUjtHUyUncqK2V9zjmSFd6Pb2Fn3HFXGiKoeyVHDNa9x8sXo2I6luzIHHK4RzoPWXucd3T4qaopw4WQIc6PBwJG4jMK7jobvhkVLWlXKHt9ZFhbabw4d6VtbEfaaR1F/MKeGpByIPEb/BKSw+0PEWTpbe17fPcRvyv2B3GmO9o8QlaGYbMoNsgSPepfsUZ3DuumnRca7RPml9A6o+WJpSc+qNt+BUGi4bY9yl/wCnNF7PIvuzCmpmbOBseBH1mhplLIpSO1JQaiTHDNBaQksw8XYBPqqoN5uOTR8VHDROedqTuA3DgjNuVxj/AECCS90iXRDeyTzT9KPAjdfgpZpmxtucAFl9LaU2zy3BJnyxw4tHcfFjllnq7AbzhZBaQZeM9FLtE4qLSDzsbNu07ADfc+9eLZ6lGD1rgEcsFSWxuEjHbYl2ixz4uxchhuS4bJ6hZemlnft+qY8hwIcI2OLbXDrYXsLgeC6ppbQkM0kFPLiIGOkc0HNzyBskjdcu8Fa2bEwhrQxjWnAAAAAL06Sq+djNqb44OP6B0/LTShzTgLB7DhtDfccea7NSVrJGNkabtcAR3rgesMzjO55z2j4DJdS9H1QXUbL7nOHde/xT5Y6RYvUax85UW0mbQTTioFKJCU3aCY4cSm7fBccSOKjc8BLGwuzUjaYLjg/SWtUUYNvE4LFaX14c42aSemAWQme55u4k9Uz7OtUuobM8cCQVV6bmk+9boh2xl2JueqVmy1I6rAUJTciyikTxxWTn2CAdVE5JGhzuKTSxrQS+pCjM7jkEdR6IJxKuYdGgZhG4o6mzR+iyv2mSUshsXdpl+Ofn2vBbVwLm7B9posRvIGRHJcr0rRzU3qahrSzEgbicnDDuK32r+scVa1vaDJxgQcNrlzvbJasb1RpmfJGnqXA9zL8imBxaUdPHidobJ47j8kLLE4Z4rHkg0VjJMsKPS9sHYq1iq2PGY6FZEsN8l65CaHVzhs9xJ9PGW62NVJo1jsRgeSYKB49mU9+KzsdbIMnFTjTEo3qi6nE93Gv0/EJ6GTs/3Lv7NL+Jh6tTvs8v4mD+n91S/wDXJeXgmO05LxHkj8Th/wAvz/YPQyfIvm0sm+TwaAnfZbZyO7yPdZZeTS8pzf4fsEO6occ3E+KV9bjXEX/tjLppvlr9jWxlgcXXBNsbZoPSOm9jstbjz+SzjCd1/FOLCTifn4qcusm41FUPHpop3J2PqKl8hu4lRiAZee9OdI1ozt1TmB7xgNhu978Bbk3MrJplN0t2aLUV4QO+UNFrXubDeSfyjeoK6qjo2Gont6w4Rx5lpO4c/cqzTOuFNSXEP8efEF25p65N6C5XOq/SktTL6yV20cbcAOAG5a8OBY/dLn6fclOblsuPqbzUmSWolqJ3C5IjvbdtF9gOgaEuuuk9iMxA2Lh2uTf3Sai0c1g5jvVs2u2/kA0gAb/aKr/SYYIwXNe6SV7sSSLADkAt8en9qmZnm9+g5lXP233O8+S7BqbR+qpIw7AkF/8Acbjysub6qaBkq5sGksYQZDuA3DqV15lOTYZAYWChmb2ReFD9sDmlDXHkp44QAnOeAo0NZCKYb8VNYBQPqOChdId6Adwl0wCidMVCBdSbCFho5S6dRvncUZHQk7kZDoxNsgblM2nc5GU+i3FaGm0eBmj4qTgu1eDlHyUNNoP8RVvT6Pa3JqsoaaysqDRzpXBrR1O4DiUFGUnQXJRVlfRaOdI4Na25+sTwCdpvTlNo8bI2Z6m2X3Izz5r2vmsjaKIU9K5vrHg+seD2wBhfkDu6FYTVCCimleK+Z8Yc3sPBwD75vJBV46YK1u/z8si7nzx4Hw6xTVVRad5d6wFrRk1rrgtsN1yNn+pTVcRZ2mkhwyIzWc0jFGyZ7YZPWMa4hkli3aAODgMwtTS1wqI7n/UA7Y4/nHXfwPUI3q3HW3BbaE9I00YDJwJmjC5weOjt/etjo/WSjmHYlMTvwyYDxy9y45XwWJQrJnDIrtd7SOeNcrY+gHQvtcBrxxafiLocniHBcYotPTR+xI9v6XEK4g9IVW3OQPH52Nd55pJYYPhgWpfn9nThs8fFIQ3iPFc+j9Jcn3oIj0Dm+4qVvpHZvph3SPCk+n8NfyNqfj6G52BxHio3Nbxb4rF/+orP/qg/+V3yUL/SJ+Gkj73uKX4V+V/P/A634+n/AE3BcziB4lea9p9kOd0C55L6SZ/uw07f6ST70BU+kWvdlKGfpa0fBculXd/x9zvUf4/sdXbFKfu7I4vIHlmgq3SNNCLz1TQfwx4n5+S41Vabqpv9SeRw5uNvBBloGJN+qrHBBdr/AF+1CuUvP7fezpld6RqePClgL3fjkw77m59yx+mtbKmo/wBSQhv4GdlvfvPeqB83BMabq3CpcCVvZO03R1HbM5e++QHMoFlt5sBv4KOSsFwBg1uAvniLFx5oRjb3C2X1PrlNDEImluZJwuQXYkDpl3KsY+orpgwdp5y4NG9x4BO1do5ppnNp3bO01zXvcBgx+Dhbeei6lq5oeGjjs3PNz3Zu43O4cluxQnk5ftMuWcMfC3LLVDQ4o4xHHi44vJ++bb+WfgrWqa03LLB29vxC59rPrxs3jpziL9v5LFUumZ2yiRsr9q9ySSb9RwXdRLG1poGGGS9TZ2J9QVC93NQaNrW1cAmbg9uErRuPHopWLyskXF0b4tNCh11I1oXmheskGF2k4OUbngJjpETjPw0fJHQ0Cs2UyKjpuKdYxHMroqQIiOkViyLgFI2FUUCbmBxUuIAFzuQevunhQwfZoiPXyC8jh91vALVaJja3bld7MbS7vsuD6x6SdUTySuNy5xPQbh4Kj9kfmxY++W/C+pS1EhcSSSSd5xKa0KQtTEqK2PARMErmEOaSCN/1mi9WpKdk7X1UbpIwCdhtu077t7kYKbT9eKmZ8jY2xNNgyNgAaxoFgMN+89Ure9DIeKlko/C/huP6T8Cq2ohIKGJUzKsjA9oc93QruTiIlIXKYuYd9uvzCQwd/TFGjrICUlk8tShdQLECUFKmuCIBHlQmye5RkclwDxlUbnpzmccOqjL2jifII0AVoJUhcG558Bn38EM+oO7Dp81CXJtICaaYu5DcEVoqBjyds2FvPd3Zqtui432Fh3puDjQ01UYHgtwLThbK3xCm07rTJN2QdlvAb+qzBmPFNbim9WSVIX003bJi4uKtNF0e2eSEo6VzzZoJPJdN1T1XcGB8lgPHHu3rsWNzdnZcigj2qDDDKLDsO7Dxuscj3H4q9rIix5bwy6K0p6GNhaDhfsi4zJ4WQetGDmuG8DzCPV41otEunyuU6AdpedNwQQl7+imjbe115xuHl91JHATmpmRp7RzXAD2xKZsSkAXtpbUjHZ4NCaSvOKY5E4n02/Y0XUvGZY/3WXAJozmF9EVVN67Rs0YzLJAOuNvgvn5+0BgjkW6vwNhftf6gCcGJX53UjQpFaPMap2NSMapQgyiB6qDDaCCKuxuQVfQkdpuIPkgkFlfde27JrkhKIlkv2l3E+9Iag8vAKEppRAT/AGnkEhqTwCHJTC5E4ndUHkonzHiVGXJpKKQBS5MJSEpzbbJN8dw+KagDCU0lJdXeqegftUrg47McbHSPduswXt34J0r2QspJK2AGl2Qwkglw2tkfdB9na5kY24EHekDVNI8nE5nNKGi2+91ByZVIh2UVRxYg8CoS3FH6Ip/WSCO5G0QLjG2Odt6eKt0LJ0rOn6jRx+oc6OJvrGut2sA7AG23bPPvWqGscEURfK10dsQ1zMCfyuHZdjvBWZo9JRRQGGYiBsTbPAttSXyDRvvhc77kc1hNZNY5at4BwjbhGwbhzHFb55IwikefDE8k2+xrqnXA1VbTtjFmCRo5uucegstLrk69hzA+vBZDUXVmRtSyWazdhnrdn7wLriMO4E4ut+VXGtFaC8C+Vz8B8Vg6nI/T9xsxQjrWnsiCFysIXWWZfpZrcu0eWSQTTSneB4BYYpvk1Nmlm0oxm+/JBsrpJT2RYIaj0c3752umAVvFOwDCwTimicUl0gan7C2GQbtqKUFEFqHkfmmihZMutV5cHxnr44H3ea49rxoT7NVyMt2XHbZ+lxJt3G4XRqKtMcjX7r48wc/rkrDXfV0V1OHMt61guw8Qc29Dh5Kko6o/oJjnplvwzgk1PdRRR48EVK50biyVpa5pIOFrEcQnGMEXHkszRtRAGp1k8O3FOLEGMhzHDerfRVJdskjh2GMPe44NsgNGUJkJv2WjFztwCsdI6UZsCGIWYMzvceKaO3uZzd7Iz+k6WPaw7Jz5HoqmWOyu6oB7bHuO8HkqKqa5ntC4/EPijakLJaSJyjJS+sByKY4rhTxeoy9ecoyikdYpcEheEwhIQmoFji4JNpMJTb8E1CuQ/bWjoNJeopnsabyTizrfcjx7PV1yfBZ5kB3/ALouKNDXp4Bo18kgJSAp4anbCz2aKPMxR2iqswSslAvsm/VBhqstE6IknPZ7LR7T3eyOnE8h5Iwcm/byLJRS34DNLaWnrpm2Z2smMYL25nj1Ww1b1QbDaWb+LLcWaDhtHcPxHPHIWJwRmr2io4GhsLS5783Edt//ABby3cVpyGwN2nEGQjPMDiAd/VbdCx++e7MTm5+yGyIquRsEbrkbTiXPI42AsOQAAHTiSueVj3SyOe52BOQG7qjdN6Y9c6zcWg48yPggGSC31mvF6nqHOex6GHEoxJIWNHst8eSLicTc3wQbJQDv6WRtO0k4b+dlOE2UaJW3wuTY9wREcN8m36oiCBo5lGsltkPD5LQmI0aUC6QuTZH2UbgStxiPSvQbm3zui3Nw3pmwniJMHLN5wCt9CaT2LMd7P3Sd3Loq53l9cVG8XOHmnTpk2rQVrtqTFXN9ZHZk4GB3P5O+e5cX0ho6WmkMcrXRvG45EcRucOa7Zo/Sro7B2LeO8fMKz0jQ01bHszMa8bnfeB4hwxBQniU948lMedw2lwfP8Tw7B1hz3ft34IiWmew4g8r7xxHEdFstPei+WMl9M4Ss/CcHj4O8uioqannjDoydkA2MVQOwTwDjbZOH5VkyNw5N0JRkriyurauzGxsNm2u4cXb7oEIuvay4sx7Hb2k7Q/pdh5g9Smy0/Z2hiPMciEN5bjqkCkKGRilcUwlJbGpMqqjRzTiBY8vkg30Txkb9cFfOUTgqLIyTxIoTBL+G/gmGKT8J8leuCjc1P6vyEeP5lL6iT8PmEoo3nMgd91bFqaWrvVYPT+ZXNohvJPkpmxAZCyJ2UrYkHN9wqC7EDY1MGKUNXmtvh+3mclO7KJUMaE5rL5K6ptGRgAuL5HHJrLMYTwD3Auf/AEMPVXmjNRKqc7RjbBFxftNw5MJ2yf1WT+nIX1ImRigG+3Td3roGqOiKiVu0QWMOT3izbbvVxjPrgOa0GjNVaOks538aQfektsg/lZkOpueaE1l10jhGLrcBm49G/QV4f+ZCcteyLqSoipWENN3EdpzvaNuJ3DkMFzTWjW0yksjdhvcN/JvzVBpjWGaqJzbH+G+J/UfgMOqDhgucVDLNvkaEUuC3oaggABHRgnM2QlMLEAI5oXmtWzWuAmFwB+eKLgmPl4qvF0VCPC1x4p4xQGy5ZLnkcLjdj4IlrrG2eGVxiq6EZFxwx+Az63RkcZIBtjvwAx62VdhTZNZfEWT24nK44prX3wt14eKk9Zbv3ZnuW8xET2g5KCQcBfqiJCDgRhwtfu5lQN6Wz5+aaIskQuOOOJ7k0Xvc93JOc/Phx+SFlkJ6D6yTiUMqag3wxQkVZJG67CRxBxB6/sizGSMckLNbIBBuuBkky/0frYBhL2Dxzb47u9XMrqepbaRrHtIzzw5ELmdVvv4bv8qsdWSRkmN7mfpOfUZFN6l7SQnpU7i6NvpT0bU8mMMz4zuDj6xo8SHeazNd6OqyO5YGTDdsusfB1reJUVLr9UR4Pa2QccWO8RgfBXlD6ToDg/1kZ5t2h4tv7kPTxS42HWbNHncwFfoKqiv6yCVvMsJH9wFlVuuu6UWulPJ7M0RPDaAPgcUZLUU8o7ccbx+ZrXe8JH0t8MoutrmJ8+Epjiu8S6B0c/OmiH6W7H+0hCSanaMP8m3SSQf/AKS/CzH+Mh8zh5KaV212o2jT/Ld3Sv8Amm/9jaN/+Jx/8sn/ACQ+Gmd8Xj+ZxItXthdwbqho0f8Atwer5D73IiPQmj2ZUsPe0O/3XXfDSB8VDwzhDW3wAufEqzo9XKuX/Tp5Tz2C0f3OsF29lXDGLMYxn6Wtb7ghazWSNgu57R+oge9N8OlywPqm+Ec5oPRnWPt6wxxD8ztp39rLjzWj0f6NaWOxnlfKRuFo2+V3eaZpP0k07RYTB3Jl3e7BZLSfpLc7CKJx5vNvIX96ZQxrsK8mSXejqVOaSlH8GNjDxDbuNuLjie9UOsOvccftyAHh7Tu5oyXIq/WKrm9qQtHBnYHjn5qvipSTxQlMCiafTWvM0pIiBYPxOxd3DIeaz8UDnu25CXE5lxuT1uiYaQDmpw1Z5ZPBZR8kcbEZSxb0tNTXPfj88Ue1lsgQPEWPPw4rLOXYtGIyE4oxp5e6/NLR0xJPW2WeH14qyp6Ld0zHw7gpNookCwQk/XHjbFWsNNiMOPHHuU8NLxwvf4Y45fujWNsN48/rJdq8DURUsHTlx5/BFxRtBvYcBa/fgkDr24JXShuJy+N+JRVnM0V+YH1kpQeqFik2gDc8t2e8805rhbDLHyzXqHnE19/FDzSAXF7n63bgoHy4cOYz+re5OjZ7rneidRCQT9bk4x96keBa4wHHeb+76yUWwT/lNYtEUrj3fX180HOUc4tytiPooWpzsAg2FIp6kH6zCqqluau54+CAmpeKSx6M7UQX+rKumhtitBUs4IGSmxXAKCSC+Yw4JY5Xs9h72fpcW+4qzlhQksKNnUOj1hq25VEnedr/AHXU7dc65v8AOv1az5IJtKXGwUw0YBnifJMpMVxXgOZr3X/iYerPkU//AL6rd7o+5n7qsdTjJROp/NHU/IuleCyk11rT/MaOjB8UFUa11p/nuHQNHwQ5pU0Ut/r65oamHSiCfSlQ/wBueU/1ke5BuiLjfEnicT4lW7aQdVJ9kJ6JXIZRKZtJxUzIOAVs2jHVO9Vy+r/spuY6gV7KTiiGxW3fXVTkcrHH3r2yev7Z3wSPcdbEYYB9D3oiOAuuQCB038Nxx5Iqm0c52ZsD3qzpdHi+7HAWwHOwUZzSKxi2BRwE3GybW6+/66o2Ci3nE88bcM8APBGtowLXNhy7syjooQAbjC+/G/mszd8FkiGlhsLnsn6xKNY09M8D5m91FcY2PDdlcHEcPrBPY65zyww/Nigohsm93XhhkU5rvjx88OCjhaTlz4ZX+Fl6SQDLH/N1VRoVsmL8LDDpYkdx7k0zWyw+uG5C1lUI27UhI5ALPV+sTzhGNgcc3eO5OkK3R//Z" alt="">
+          <div class="product-info">
+            <h2>Ethiopia Yirgacheffe</h2>
+            <p>Floral and tea-like with notes of bergamot and lemon</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">1890₽</span>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-cart">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmNakVElhz_jPfJCfg7YNL06UONRgzE_ne0g&s" alt="">
+          <div class="product-info">
+            <h2>Guatemala Antigua</h2>
+            <p>Chocolate and spice with smoky finish</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">970₽</span>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-cart">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNtg6W41xCww10YeL76cp2bvF56nmwWLID1g&s" alt="">
+          <div class="product-info">
+            <h2>Earl Grey Supreme</h2>
+            <p>Black tea with bergamot oil and cornflower petals</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">2900₽</span>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-cart">
+          <img src="data:image/jpeg;base64,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" alt="">
+          <div class="product-info">
+            <h2>Assam Black Tea</h2>
+            <p>Malty and robust with honey notes</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">1320₽</span>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
         </div>
       </div>
-      <div class="product-card">
-        <img src="" alt="">
-        <div class="product-info">
-          <h2>Guatemala Antigua</h2>
-          <p>Chocolate and spice with smoky finish</p>
-        </div>
-        <div class="product-footer">
-          <span class="product-price">970₽</span>
-          <button class="add-to-cart">Add to card</button>
-        </div>
-      </div>
-      <div class="product-card">
-        <img src="" alt="">
-        <div class="product-info">
-          <h2>Earl Grey Supreme</h2>
-          <p>Black tea with bergamot oil and cornflower petals</p>
-        </div>
-        <div class="product-footer">
-          <span class="product-price">2900₽</span>
-          <button class="add-to-cart">Add to card</button>
-        </div>
-      </div>
-      <div class="product-card">
-        <img src="" alt="">
-        <div class="product-info">
-          <h2>Assam Black Tea</h2>
-          <p>Malty and robust with honey notes</p>
-        </div>
-        <div class="product-footer">
-          <span class="product-price">1320₽</span>
-          <button class="add-to-cart">Add to card</button>
-        </div>
-      </div>
-    </div> -->
+    </div>
     <footer>
       <div class="footer-container">
         <div class="footer-about">
@@ -142,6 +232,26 @@
       </div>
     </footer>
     <div class="copyright">© 2025 NOCTURNE COFFEE. All rights reserved.</div>
+        <script>
+      const products = document.querySelector(".products-container");
+      function randomNumber(min, max) {
+        return Math.floor(Math.random() * (max - min) + min);
+      }
+
+      price = randomNumber(700, 3000);
+
+      const productCard = `        <div class="product-cart">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNtg6W41xCww10YeL76cp2bvF56nmwWLID1g&s" alt="">
+          <div class="product-info">
+            <h2>Assam Black Tea</h2>
+            <p>Malty and robust with honey notes</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">${price}₽</span>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>`;
+      products.innerHTML += productCard;
+    </script>
   </body>
 </html>
-
